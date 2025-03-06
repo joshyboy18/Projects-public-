@@ -845,6 +845,7 @@ body {
     animation: beetleFade 1s linear forwards;
     animation-delay: 3s;
     opacity: 0;
+    margin-top: 100px;
 }
 
 @keyframes beetleFade {

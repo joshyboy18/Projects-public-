@@ -1,0 +1,878 @@
+body {
+
+    background-image: url("https://img.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg");
+    background-size: contain;
+    animation: slide 20s infinite linear;
+    
+}
+
+@keyframes slide {
+
+    from {
+
+        background-position: 0 0;
+    }   
+
+    to {
+
+        background-position: 1150px 1150px;
+    }
+}
+
+.div-sign{
+
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeSlide 1s linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    background-color: gray;
+    border-style: ridge;
+    border-color: blue;
+    max-width: 100%;
+
+}
+
+.welcome-sign {
+
+    color: white;
+    font-size: 50px;
+    color-scheme: dark;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+    
+
+}
+
+@keyframes fadeSlide {
+
+    
+    0% {
+
+        opacity: 0;
+        transform: translateY(0px);
+    }
+
+    25% {
+
+        opacity: 0.25;
+        transform: translateY(-5px);
+
+    }
+
+    50% {
+
+        opacity: 0.5;
+        transform: translateY(-10px);
+    }
+
+    75% {
+
+        opacity: 0.75;
+        transform: translateY(-15px);
+    }
+
+    100% {
+
+        opacity: 1;
+        transform: translateY(-20px);
+        color: blue;
+    }
+
+    
+
+}
+
+.div-options {
+
+    display: grid;
+    grid-template-columns: 480px 500px 480px;
+    width: 100%;
+    height: 500px;
+    animation: divFade 1s linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+}
+
+@keyframes divFade {
+
+    0% {
+
+        opacity: 0;
+    }
+
+    25% {
+
+        opacity: 0.25;
+    }
+
+    50% {
+
+        opacity: 0.5;
+    }
+
+    75% {
+
+        opacity: 0.75;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+}
+
+.code-button {
+    
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-style:outset;
+    border-color: rgb(0, 68, 255);
+    transition: transform 0.3s;
+    background-color: white;
+    margin-left: 100px;
+    opacity: 1;
+    margin-top: 10px;
+
+    
+
+}
+
+
+.code-button:hover {
+
+    opacity: 1;
+    cursor: pointer;
+    transform: translateY(-10px);
+    animation: codeBounce 2s linear infinite;
+    
+    
+}
+
+
+@keyframes codeBounce {
+
+    0% {
+
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+
+    25% {
+
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    75% {
+
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+
+    100% {
+
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.code-button:active {
+
+    background-color: gray;
+    
+}
+
+
+
+.computer-image {
+
+    height: 50px;
+    width: 50px;
+    
+
+}
+
+.div-choices {
+
+    height: 100px;
+    width: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    width: 300px;
+    
+    
+}
+
+
+.github-button {
+
+            height: 80px;
+            width : 80px;
+            background-color: white;
+            background-image: url("../images/github.png");
+            border-radius: 50%;
+            background-size: 120px;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-style: outset;
+            border-color: blue;
+            margin-left: 20px;
+            background-color: white;
+
+}
+
+
+.github-button:hover {
+
+    cursor: pointer;
+    transition: 0.3s;
+    animation: gitbounce 2s linear infinite;
+
+
+    
+}
+
+.github-button:active {
+
+    background-color: gray;
+}
+
+@keyframes gitbounce {
+
+    0% {
+
+        transform: translateY(0px);
+        
+        
+        
+    }
+
+    25% {
+
+        transform: translateY(-5px);
+        
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+    
+    }
+
+    75% {
+
+        transform: translateY(-5px);
+        
+    }
+
+    100% {
+
+        transform: translateY(0px);
+        
+    }
+}
+
+.github-button:active {
+
+    background-color: rgb(97, 97, 97);
+}
+
+.resume-button {
+
+    height: 80px;
+    width : 80px;
+    background-color: white;
+    background-image: url("../images/resume.png");
+    border-radius: 50%;
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-style: outset;
+    border-color: blue;
+    margin-left: 90px;
+    background-color: white;
+    
+}
+
+.resume-button:hover {
+
+    cursor: pointer;
+    transition: 0.3s;
+    animation: resbounce 2s linear infinite;
+}
+
+.resume-button:active {
+
+    background-color: rgb(90, 90, 90);
+}
+
+@keyframes resbounce {
+
+    0% {
+
+        transform: translateY(0px);
+        
+    }
+
+    25% {
+
+        transform: translateY(-5px);
+        
+    }
+
+    50% {
+        
+        transform: translateY(-10px);
+        
+    }
+
+    75% {
+
+        transform: translateY(-5px);
+        
+    }
+
+    100% {
+
+        transform: translateY(0px);
+        
+    }
+}
+
+.about-title {
+
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    opacity: 1;
+    background-color: gray;
+    align-self: center;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    margin-top: 0px;
+
+
+}
+
+.div-about {
+
+    display: inline-block;
+    opacity: 1;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    margin-left: 110px;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 800px;
+    border-radius: 10px;
+    height: 300px;
+    width: 505px;
+
+
+}
+
+.informational {
+
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20px;
+    opacity: 1;
+    height: 50px;
+    width: 500px;
+    display: block;
+    
+}
+
+.click-arrow {
+
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+
+}
+
+.click-arrow:active {
+
+    opacity: 0.5;
+}
+
+.click-arrow:hover {
+
+    cursor: pointer;
+    animation: arrow_one_slip 2s linear infinite forwards;
+}
+
+@keyframes arrow_one_slip {
+
+    0% {
+
+        transform: translateX(0px);
+    
+    }
+
+    25% {
+
+        transform: translateX(-5px);
+      
+
+    }
+
+    50% {
+
+        transform: translateX(-10px);
+      
+
+    }
+
+    75% {
+
+        transform: translateX(-5px);
+       
+
+    }
+
+    100% {
+
+        transform: translateX(0px);
+        
+
+    }
+
+    
+}
+
+.click-arrow2 {
+
+    height: 70px;
+    width: 70px;
+    margin-left: 140px;
+    margin-top: 20px;
+    
+}
+
+.click-arrow2:active {
+
+    opacity: 0.5;
+}
+
+.click-arrow2:hover {
+
+    cursor: pointer;
+    animation: arrow_two_slip 2s linear infinite forwards;
+}
+
+@keyframes arrow_two_slip {
+
+    0% {
+
+        transform: translateX(0px);
+    
+    }
+
+    25% {
+
+        transform: translateX(5px);
+      
+
+    }
+
+    50% {
+
+        transform: translateX(10px);
+      
+
+    }
+
+    75% {
+
+        transform: translateX(5px);
+       
+
+    }
+
+    100% {
+
+        transform: translateX(0px);
+        
+
+    }
+
+    
+}
+.arrow-div {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 0px;
+    opacity: 1;
+}
+
+.div-code {
+
+    display: inline-block;
+    margin-top: 115px;
+    margin-left: 150px;
+    height: 300px;
+    
+}
+
+.org-button {
+
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-style:outset;
+    border-color: rgb(0, 68, 255);
+    transition: transform 0.3s;
+    background-color: white;
+    opacity: 1;
+    margin-top: 10px;
+    background-image: url("../images/ou.png");
+    background-size: center;
+    background-size: 85px;
+    background-repeat: no-repeat;
+    background-position-y: 6px;
+    background-position-x: 3px;
+    margin-left: 130px;
+    
+    
+}
+
+.org-button:hover {
+
+    cursor: pointer;
+    animation: orgbounce 2s linear infinite;
+}
+
+@keyframes orgbounce {
+
+    0% {
+
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+
+    25% {
+
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    75% {
+
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+
+    100% {
+
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.org-button:active {
+
+    background-color: gray;
+}
+
+
+
+.div-orgs {
+
+    height: 300px;
+    margin-top: 120px;
+    margin-left: 180px;
+    width: 400px;
+    
+
+}
+
+.div-choices-two {
+
+    display: block;
+    height: 100px;
+
+    
+}
+
+.hslc-button {
+
+        height: 80px;
+        width : 80px;
+        background-color: white;
+        border-radius: 50%;
+        background-size: 120px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-style: outset;
+        border-color: blue;
+        margin-left: 20px;
+        background-color: white;
+        background-image: url("../images/hslc.png");
+        background-size: 60px;
+        background-position: center;
+        background-position-y: 10px;
+        background-position-x: 12px;
+        display: inline-block;
+        
+
+}
+
+.hslc-button:hover {
+
+    cursor: pointer;
+    animation: hslcbounce 2s linear infinite;
+}
+
+@keyframes hslcbounce {
+
+    0% {
+
+        transform: translateY(0px);
+        
+    }
+
+    25% {
+
+        transform: translateY(-5px);
+        
+    }
+
+    50% {
+        
+        transform: translateY(-10px);
+        
+    }
+
+    75% {
+
+        transform: translateY(-5px);
+        
+    }
+
+    100% {
+
+        transform: translateY(0px);
+        
+    }
+
+}
+
+.miracle-button {
+
+    height: 80px;
+    width : 80px;
+    background-color: white;
+    border-radius: 50%;
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-style: outset;
+    border-color: blue;
+    margin-left: 40px;
+    background-color: white;
+    background-image: url("../images/Miracle.png");
+    background-size: 60px;
+    background-position: center;
+    background-position-y: 10px;
+    background-position-x: 12px;
+
+    
+}
+
+.miracle-button:hover {
+
+    cursor: pointer;
+    animation: miraclebounce 2s linear infinite;
+}
+
+.miracle-button:active {
+
+    background-color: gray;
+}
+
+@keyframes miraclebounce {
+
+    0% {
+
+        transform: translateY(0px);
+        
+    }
+
+    25% {
+
+        transform: translateY(-5px);
+        
+    }
+
+    50% {
+        
+        transform: translateY(-10px);
+        
+    }
+
+    75% {
+
+        transform: translateY(-5px);
+        
+    }
+
+    100% {
+
+        transform: translateY(0px);
+        
+    }
+
+}
+
+.olympics-button {
+
+    height: 80px;
+    width : 80px;
+    background-color: white;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-style: outset;
+    border-color: blue;
+    margin-left: 40px;
+    background-color: white;
+    background-image: url("http://sook.org/wp-content/uploads/2017/05/SO_Unified-Sports_Round_Black-300x300.png");
+    background-size: 80px;
+    background-position: center;
+    padding-top: 40px;  
+
+}
+
+.olympics-button:hover {
+
+    cursor: pointer;
+    animation: olympicsbounce 2s linear infinite;
+}
+
+@keyframes olympicsbounce {
+
+    0% {
+
+        transform: translateY(0px);
+        
+    }
+
+    25% {
+
+        transform: translateY(-5px);
+        
+    }
+
+    50% {
+        
+        transform: translateY(-10px);
+        
+    }
+
+    75% {
+
+        transform: translateY(-5px);
+        
+    }
+
+    100% {
+
+        transform: translateY(0px);
+        
+    }
+
+}
+
+.olympics-button:active {
+
+    background-color: gray;
+}
+
+.div-images {
+
+    border-style: solid;
+    border-color: black;
+    height: 300px;
+    width: 500px;
+    
+}
+
+.beetle-div {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    height: 100px;
+    margin-bottom: 125px;
+    animation: beetleFade 1s linear forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+@keyframes beetleFade {
+
+    0% {
+
+        opacity: 0;
+    }
+
+    25% {
+
+        opacity: 0.25;
+    }
+
+    50% {
+
+        opacity: 0.5;
+    }
+
+    75% {
+
+        opacity: 0.75;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+}
+
+

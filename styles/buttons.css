@@ -1,0 +1,117 @@
+.back-to-amazon {
+    
+    color: blue;
+    cursor: pointer;
+
+  }
+
+  .Nike-Shoes {
+    
+    font-size: 25px;
+    font-weight: bold;
+    
+  }
+
+  .price {
+
+    font-size: 15px;
+    color: green;
+    font-weight: bold;
+
+  }
+
+  .add-to-cart {
+
+    background-color: yellow;
+    border-radius: 20px;
+    margin-right: 10px;
+    border-style: none;
+    border-color: white;
+    width: 100px;
+    border-width: 1px;
+    height: 30px;
+    cursor: pointer;
+
+  }
+
+  .add-to-cart:hover {
+
+    background-color: orange;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+    transition: background-color 0.5s, box-shadow 0.5s;
+    
+  }
+
+  .add-to-cart:active {
+
+    opacity: 0.6;
+
+  }
+
+  .buy-now {
+
+    background-color: rgb(237, 151, 4);
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    width: 100px;
+    border-width: 1px;
+    height: 30px;
+    cursor: pointer;
+
+  }
+
+  .buy-now:hover {
+
+    opacity: 0.6;
+
+  }
+
+  .Save {
+
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 50px;
+    font-weight: bold;
+    color: blue;
+    border-color: blue;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    margin-left: 15px;
+
+  }
+
+  .Save:hover {
+
+    background-color: rgb(225, 225, 245);
+
+  }
+
+  .Save:active {
+
+    background-color: blue;
+    color: white;
+
+  }
+
+  .Metal-Sonic {
+
+    background-color: red;
+    border-radius: 20px;
+    border-width: 15px;
+    border-color: blue;
+    border-style: solid;
+
+  }
+
+  .Metal-Sonic:hover {
+
+    cursor: pointer;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 1);
+    
+  }
+  

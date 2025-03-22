@@ -2523,8 +2523,6 @@ public class MarioParty2 {
                         System.out.println("BOOM! You are out " + players.get(index).getPlayerName() + "!");
                         System.out.println();
                         players.get(index).setBoom(true);
-                    
-                   
                         --leftStanding; // this is to decrement the number of players left
                     }
 
@@ -2533,7 +2531,6 @@ public class MarioParty2 {
                         System.out.println("BOOM! You are out " + players.get(index).getPlayerName() + "!");
                         System.out.println();
                         players.get(index).setBoom(true);
-
                         --leftStanding; // this is to decrement the number of players left
                     }
 

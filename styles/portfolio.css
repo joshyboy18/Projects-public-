@@ -910,9 +910,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: lightblue;
+    animation: presentFade 2s linear;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
     opacity: 0;
-    animation-delay: 7s;
-    animation: presentFade 3s linear forwards;
 
 }
 
@@ -920,14 +921,12 @@ body {
 
     font-size: 20px;
     font-weight: bold;
-    color: black;
     text-align: center;
     margin-top: 20px;
     opacity: 1;
     margin-bottom: 0px;
     display: block;
-    border-style: solid;
-    border-color: black;
+
 }
 
 @keyframes presentFade {
@@ -962,13 +961,11 @@ body {
 
 .shift-div {
 
-    border-style: solid;
-    border-color: red;
     height: 100px;
     width: 300px;
     display: inline-block;
     margin-top: 50px;
-    margin-left: 145px;
+    margin-left: 160px;
 
 }
 

@@ -203,6 +203,8 @@ function slideInfoRight() {
 
         slideStatement = wordle();
         document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/wordle.png)";
+        document.getElementById("div_images").style.backgroundSize = "cover";
 
     }
 
@@ -213,6 +215,50 @@ function slideInfoRight() {
         document.getElementById("div_images").style.backgroundImage = "url(images/PokeSite.png)";
 
     }
+
+}
+
+function slideInfoLeft() {
+
+    if (slideStatement == RPC()) {
+
+        slideStatement = wordle();
+        document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/wordle.png)";
+        document.getElementById("div_images").style.backgroundSize = "cover";
+    }
+
+    else if (slideStatement == Chess()) {
+            
+            slideStatement = RPC();
+            document.getElementById("projects-info").innerHTML = slideStatement;
+            document.getElementById("div_images").style.backgroundImage = "url(images/PokeSite.png)";
+    }
+
+    else if (slideStatement == MarioParty2()) {
+
+        slideStatement = Chess();
+        document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/chess2.png)";
+        document.getElementById("div_images").style.backgroundSize = "cover";
+    }
+
+    else if (slideStatement == wordle()) {
+
+        slideStatement = MarioParty2();
+        document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/MarioParty2.png)";
+        document.getElementById("div_images").style.backgroundSize = "cover";
+    }
+
+    else if (slideStatement == RPC()) {
+
+        slideStatement = wordle();
+        document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/wordle.png)";
+        document.getElementById("div_images").style.backgroundSize = "cover";
+    }
+
 
 }
 

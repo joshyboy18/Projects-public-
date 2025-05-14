@@ -80,6 +80,7 @@ class Player {
 
         int calculateDamage(Pokemon attacker, Pokemon defender, Moves move) {
 
+            int newDamage;
             int effectiveness = 1;
             int stab = 1;
             
@@ -112,17 +113,17 @@ class Player {
 
             if (move.category == "physical") {
 
-                defender.hp -= ((((((2 * 50)/5) + 2) * move.power * (attacker.atk / defender.def)) / 50) + 2) * effectiveness * stab;
+                newDamage = ((((((2 * 50)/5) + 2) * move.power * (attacker.atk / defender.def)) / 50) + 2) * effectiveness * stab;
 
             }
 
             else if (move.category == "special") {
 
-                defender.hp -= ((((((2 * 50)/5) + 2) * move.power * (attacker.spAtk / defender.spDef)) / 50) + 2) * effectiveness * stab;
-
+                newDamage = ((((((2 * 50)/5) + 2) * move.power * (attacker.spAtk / defender.spDef)) / 50) + 2) * effectiveness * stab;
+            
             }
 
-            return defender.hp;
+            return newDamage;
 
         }
  

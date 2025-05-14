@@ -71,6 +71,7 @@ function eventHappens() {
             comp_buttons.hslc.addEventListener("click", hslcClick);
             comp_buttons.miracle.addEventListener("click", miracleClick);
             comp_buttons.olympics.addEventListener("click", olympicsClick);
+        
             
 
 
@@ -164,6 +165,7 @@ function clickLeftArrow() {
         currStatement = introduction();
         document.getElementById("information").innerHTML = currStatement;
         document.getElementById("div_about").style.backgroundColor = "white";
+        
     }
 
     else if (currStatement == programming()) {

@@ -6,6 +6,7 @@ const comp_buttons = {
 
 rightClick = 0;
 currStatement = organizations();
+slideStatement = RPC();
 clickCount = 0;
 num = 0;
 // for the computer button
@@ -70,6 +71,7 @@ function eventHappens() {
             comp_buttons.hslc.addEventListener("click", hslcClick);
             comp_buttons.miracle.addEventListener("click", miracleClick);
             comp_buttons.olympics.addEventListener("click", olympicsClick);
+        
             
 
 
@@ -163,6 +165,7 @@ function clickLeftArrow() {
         currStatement = introduction();
         document.getElementById("information").innerHTML = currStatement;
         document.getElementById("div_about").style.backgroundColor = "white";
+        
     }
 
     else if (currStatement == programming()) {
@@ -180,6 +183,87 @@ function clickLeftArrow() {
     }
 }
 
+function slideInfoRight() {
+
+    if (slideStatement == RPC()) {
+
+        slideStatement = Chess();
+        document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/chess2.png)";
+        document.getElementById("div_images").style.backgroundSize = "cover";
+    }   
+
+    else if (slideStatement == Chess()) {
+
+        slideStatement = MarioParty2();
+        document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/MarioParty2.png)";
+        document.getElementById("div_images").style.backgroundSize = "cover";
+    }
+
+    else if (slideStatement == MarioParty2()) {
+
+        slideStatement = wordle();
+        document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/wordle.png)";
+        document.getElementById("div_images").style.backgroundSize = "cover";
+
+    }
+
+    else if (slideStatement == wordle()) {
+
+        slideStatement = RPC();
+        document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/PokeSite.png)";
+
+    }
+
+}
+
+function slideInfoLeft() {
+
+    if (slideStatement == RPC()) {
+
+        slideStatement = wordle();
+        document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/wordle.png)";
+        document.getElementById("div_images").style.backgroundSize = "cover";
+    }
+
+    else if (slideStatement == Chess()) {
+            
+            slideStatement = RPC();
+            document.getElementById("projects-info").innerHTML = slideStatement;
+            document.getElementById("div_images").style.backgroundImage = "url(images/PokeSite.png)";
+    }
+
+    else if (slideStatement == MarioParty2()) {
+
+        slideStatement = Chess();
+        document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/chess2.png)";
+        document.getElementById("div_images").style.backgroundSize = "cover";
+    }
+
+    else if (slideStatement == wordle()) {
+
+        slideStatement = MarioParty2();
+        document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/MarioParty2.png)";
+        document.getElementById("div_images").style.backgroundSize = "cover";
+    }
+
+    else if (slideStatement == RPC()) {
+
+        slideStatement = wordle();
+        document.getElementById("projects-info").innerHTML = slideStatement;
+        document.getElementById("div_images").style.backgroundImage = "url(images/wordle.png)";
+        document.getElementById("div_images").style.backgroundSize = "cover";
+    }
+
+
+}
+
 function organizations() {
 
     return "I am in various organizations on campus. The current ones I am in include HSLC, Miracle Mindset, and OU's Unified Olympics. These organizations focus on philantrohpy and helping the younger generation dvelop as leaders.";
@@ -195,5 +279,24 @@ function introduction() {
     return "Hi! My name is Joshua Robinson, a computer science student at the University of Oklahoma. I'm a hardworking student who excels in various programming languages, including C++, java, javascript, python, and much more. I also excel in the areas of critical-thinking, teamwork, reliability, intelligence, creativity, and motivation. I am excited to have you here and hope you enjoy learning more about who I am. On the left is a button referencing all my programming and resume information. The right button directs you to the various website of my campus involvement. Finally, click the arrows to move the slides to learn where I come from. Enjoy!";
 }
 
+function RPC() {
+
+    return "This is my first HTML project of a pokemon/rock paper scissors game. You pick a pokemon type and the computer will choose one, determining whether you win or lose. It also has a win and lose percentage to look at, but you can restart the game whenever you want!";
+}
+
+function Chess() {
+
+    return "This is my Chess program in C++. It is a terminal game that uses coordinates to determine where each of the pieces moves. It also has all the rules in chess and turn orders to make sure the players are playing fair!";
+}
+
+function MarioParty2() {
+
+    return "This is my java project that is a mini version of Mario Party. It is a text-based game that has 4 players and some mini-games. The player with the most stars at the end wins!";
+}
+
+function wordle() {
+
+    return "This is my version of Wordle in Python. It is a terminal game that has you guess a 5-letter word in 6 tries. It also has a hint system to help you out!";
+}
 
 

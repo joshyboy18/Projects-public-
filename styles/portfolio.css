@@ -4,6 +4,7 @@ body {
     background-size: contain;
     animation: slide 20s infinite linear;
     
+    
 }
 
 @keyframes slide {
@@ -30,8 +31,9 @@ body {
     animation-fill-mode: forwards;
     opacity: 0;
     background-color: gray;
-    border-style: ridge;
-    border-color: blue;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
     max-width: 100%;
 
 }
@@ -838,8 +840,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-style: solid;
-    border-color: black;
     height: 100px;
     margin-bottom: 125px;
     animation: beetleFade 1s linear forwards;
@@ -875,5 +875,141 @@ body {
         opacity: 1;
     }
 }
+
+.div-images {
+
+    display: inline-block;
+    background-image: url("../images/PokeSite.png");
+    width: 600px;
+    height: 200x;
+    background-size: 700px;
+    background-repeat: no-repeat;
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+.div-description {
+
+    display: inline-block;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    height: 300px;
+    width: 600px;
+    margin-left: 300px;
+    color: black;
+}
+
+.div-present {
+
+    border: solid black 5px;
+    height: 400px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    animation: presentFade 2s linear;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+}
+
+.description {
+
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 1;
+    margin-bottom: 0px;
+    display: block;
+
+}
+
+@keyframes presentFade {
+
+    0% {
+
+        opacity: 0;
+    }
+
+    25% {
+
+        opacity: 0.25;
+    }
+
+    50% {
+
+        opacity: 0.5;
+    }
+
+    75% {
+
+        opacity: 0.75;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+
+
+}
+
+.shift-div {
+
+    height: 100px;
+    width: 300px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 160px;
+
+}
+
+.shift-arrow {
+
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.shift-arrow:active {
+
+    opacity: 0.5;
+}
+
+.shift-arrow:hover {
+
+    cursor: pointer;
+    animation: arrow_one_slip 2s linear infinite forwards;
+}
+
+.shift-arrow2 {
+
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 100px;
+
+}
+
+.shift-arrow2:active {
+
+    opacity: 0.5;
+}
+
+.shift-arrow2:hover {
+
+    cursor: pointer;
+    animation: arrow_two_slip 2s linear infinite forwards;
+    
+}
+
 
 

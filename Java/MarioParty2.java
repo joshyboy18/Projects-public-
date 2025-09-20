@@ -7,6 +7,7 @@ import java.util.HashMap;
 
 class Player {
 
+
     private ArrayList<String> itemSet = new ArrayList<>(3);
     private String playerName;
     private int coins;
